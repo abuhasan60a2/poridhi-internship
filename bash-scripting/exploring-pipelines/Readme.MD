@@ -36,6 +36,7 @@ echo "David Brown" >> names.txt
 ```bash
 cat names.txt
 ```
+
 ![Names Output](images/names-output.png)
 
 What Happens?
@@ -45,7 +46,9 @@ What Happens?
 ```bash
 cat names.txt | wc -l
 ```
+
 ![Name Count](images/name-count.png)
+
 What Happens?
 - `cat` reads the content of names.txt
 - Output is piped to `wc -l`
@@ -55,6 +58,7 @@ What Happens?
 ```bash
 cat names.txt | grep "Smith"
 ```
+
 ![Grep Smith](images/grep-smith.png)
 
 What Happens?
@@ -89,6 +93,7 @@ What Happens?
 ```bash
 cat access.log | grep "index.html" | wc -l
 ```
+
 ![Index Count](images/index-access-count.png)
 
 What Happens?
@@ -100,6 +105,7 @@ What Happens?
 ```bash
 ps aux | grep "bash"
 ```
+
 ![bash process](images/bash-process.png)
 
 What Happens?
@@ -110,6 +116,7 @@ What Happens?
 ```bash
 df -h | grep "/dev/" | sort -rn -k5
 ```
+
 ![Disk Usage](images/disk-usage.png)
 
 What Happens?
@@ -166,6 +173,7 @@ cat application.log
 ```bash
 cat application.log | grep ERROR | cut -d' ' -f2 | cut -d: -f1 | sort | uniq -c
 ```
+
 ![Error Distribution](images/error-per-hour.png)
 
 What Happens?
@@ -196,6 +204,7 @@ What Happens?
 ```bash
 cat application.log | grep -E "Database|connection pool" | cut -d' ' -f2,3,4,5,6,7,8,9
 ```
+
 ![Database Error](images/database-error.png)
 
 What Happens?
@@ -232,7 +241,7 @@ Let's see the generated report:
 cat incident_report.txt
 ```
 
-![](images/incident-report.png)
+![Incident Report](images/incident-report.png)
 
 
 ### 4. Root Cause Analysis
