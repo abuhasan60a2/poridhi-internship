@@ -1,7 +1,9 @@
 # Exploring Pipelines: Processing and Analyzing Data Streams
 
 Pipelines are fundamental features in Unix/Linux that allow you to connect multiple commands together, where the output of one command becomes the input for the next. This powerful mechanism enables you to process and analyze data streams efficiently without creating intermediate files.
-![Pipeline Diagram](/images/pipeline-diagram.svg)
+
+![Pipeline Diagram](images/pipeline-diagram.svg)
+
 ## Learning Objectives
 
 By the end of this lab, you will understand:
