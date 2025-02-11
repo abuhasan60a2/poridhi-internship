@@ -167,6 +167,7 @@ cat application.log
 cat application.log | grep ERROR | cut -d' ' -f2 | cut -d: -f1 | sort | uniq -c
 ```
 ![Error Distribution](images/error-per-hour.png)
+
 What Happens?
 - `cat application.log` reads the content of the log file
 - `grep ERROR` filters only lines containing "ERROR"
@@ -181,7 +182,9 @@ What Happens?
 ```bash
 cat application.log | grep "Ticket creation failed" | cut -d= -f2
 ```
+
 ![](images/failed-ticket-creation.png)
+
 What Happens?
 - `cat application.log` reads the log file
 - `grep "Ticket creation failed"` filters for ticket creation failures
@@ -194,6 +197,7 @@ What Happens?
 cat application.log | grep -E "Database|connection pool" | cut -d' ' -f2,3,4,5,6,7,8,9
 ```
 ![Database Error](images/database-error.png)
+
 What Happens?
 - `cat application.log` reads the log file
 - `grep -E "Database|connection pool"` filters for lines containing either "Database" or "connection pool"
@@ -221,10 +225,13 @@ What Happens?
 - `grep -E "Database|connection pool" | grep ERROR | wc -l` counts database-related errors
 - `>>` appends each line to the report file
 
+
 Let's see the generated report:
+
 ```bash
 cat incident_report.txt
 ```
+
 ![](images/incident-report.png)
 
 
