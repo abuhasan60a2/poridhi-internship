@@ -2,7 +2,7 @@
 
 Advanced pipelines in Unix/Linux systems enable sophisticated data processing and analysis through the strategic combination of key utilities. This guide focuses on mastering du, grep, and tee commands with process substitution for efficient file and text processing.
 
-![Advanced Pipeline Operations](images/advanced-pipeline-diagram.svg)
+<!-- ![Advanced Pipeline Operations](images/advanced-pipeline-diagram.svg) -->
 
 ## Learning Objectives
 
